@@ -1,0 +1,418 @@
+$coral : #FE3048;
+$orange : #FC5D3D;
+$darkGrey : #858585;
+$lightGrey : #F1F1F1;
+
+* {
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+}
+.Navbar{
+    height : 18vh;
+    background-color: $coral;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Redressed';
+    position : fixed;
+    width : 100%;
+    background-color: white;
+    z-index : 100;
+    p {
+        color : black;
+        font-size : 2.6rem;
+    }
+    div{
+        width : 100%;
+        display : flex;
+        justify-content: center;
+    }
+    div svg{
+        margin : 1%;
+    }
+}
+
+.unbroken{
+    height : 50vh;
+    background-color: white;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-family: 'Rajdhani';
+        color : black;
+        font-size: 4rem;
+        letter-spacing: 2.5rem;
+    }
+}
+
+.todayCircle{
+    width : 100%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+        position : absolute;
+    }
+    div{
+        border-radius: 50%;
+        width : 180px;
+        height : 180px;
+        background-color: $coral;
+        position : absolute;
+        z-index : 1;
+    }
+    span{
+        z-index: 10;
+        color : white;
+        font-family: 'Righteous';
+        font-size: 2rem;
+    }
+
+}
+
+.todayContent{
+    height : auto;
+    padding : 20% 0;
+    background-color: $lightGrey;
+    display : flex;
+    align-items: center;
+    flex-wrap : wrap;
+    justify-content: space-evenly;
+    font-family: 'Righteous';
+    .todayPost1div{
+        width : 55%;
+        background-color: $lightGrey;
+        height : 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .todayPost1{
+            width : 90%;
+            height : 60%;
+            background-color: white;
+            padding : 2%;
+            box-shadow : 0px 0px 8px rgb(189, 189, 189);
+            display : flex;
+            align-items: center;
+            img {
+                height : 100%;
+                max-width: 35%;
+                object-fit: cover;
+            }
+            div {
+                padding : 20px;
+                height: 100%;
+                display : flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-evenly;
+                :nth-child(1){
+                    color : $orange;
+                    font-size: 1.6rem;
+                }
+                :nth-child(2) {
+                    color : $darkGrey;
+                }
+            }
+        }
+    }
+    .todayPost2div{
+        width : 45%;
+        background-color: $lightGrey;
+        height : 100%;
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        .todayPost2{
+            width : 70%;
+            background-color: white;
+            height : 80%;
+            box-shadow : 0px 0px 8px rgb(189, 189, 189);
+            padding : 2%;
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 100%;
+                max-height: 40%;
+                object-fit: cover;
+            }
+            div {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding : 5% 0;
+                :nth-child(1){
+                    color : $orange;
+                    font-size: 1.6rem;
+                }
+                :nth-child(2) {
+                    color : $darkGrey;
+                }
+            }
+        }
+    }
+}
+
+.allPosts {
+    background-color: $coral;
+    height : auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing : border-box;
+    font-family: 'Righteous';
+    .discover{
+        height : 20%;
+        display: flex;
+        align-items: center;
+        svg{
+            display: inline;
+        }
+        p{
+            display: inline;
+            font-family: 'Quicksand';
+            font-size: 10rem;
+            color : white;
+        }
+    }
+    .allPosts{
+        height : 80%;
+        width : 100%;
+        display : flex;
+        flex-wrap : wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 2%;
+        div{
+            box-shadow: 0px 0px 6px rgb(44, 44, 44);
+            height : auto;
+            width : 30%;
+            margin : 2% 5%;
+            background-color: white;
+            padding : 1.4%;
+            display : flex;
+            flex-direction: column;
+            align-items: flex-start;
+            img{
+                width : 100%;
+                max-height: 35%;
+                object-fit: cover;
+            }
+            p {
+                padding : 1%;
+            }
+            .title{
+                color : $orange;
+                font-size: 1.6rem;
+                padding : 4% 0;
+            }
+            .tags{
+                color : $darkGrey;
+                padding : 2%;
+            }
+        }
+    }
+
+}
+
+@media(max-width : 800px) {
+    .unbroken p{
+        letter-spacing : 1.2rem;
+    }
+    .todayContent{
+        flex-direction: column;
+        height : 120vh;
+        flex-wrap: wrap;
+        padding : 20px;
+        .todayPost1div{
+            height : 45%;
+            width: 90%;
+            .todayPost1{
+                height : 80%;
+                align-self : end;
+            }
+        }
+        .todayPost2div{
+            height: 55%;
+            width : 90%;
+            .todayPost2{
+                height : 95%;
+            }
+        }
+    }
+    .allPosts {
+        .allPosts{
+            flex-direction: column;
+            div{
+                width : 70%;
+            }
+        }
+    }
+}
+
+.footer {
+    width : 100%;
+    height : 10vh;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    // box-shadow: -2px -2px 8px black;
+    p{
+        font-family: 'Redressed';
+        font-size : 2rem;
+
+    }
+}
+
+@media(max-width : 480px) {
+    .unbroken p{
+        letter-spacing : 0px;
+    }
+}
+
+@media(max-height : 1200px){
+    .todayCircle svg{
+        display: none;
+    }
+
+}
+
+@media (min-width : 1800px) {
+    .unbroken {
+        p{
+            font-size : 6.4rem;
+        }
+    }
+
+    .Navbar p{
+        font-size : 4rem;
+    }
+
+    .todayCircle{
+        div{
+            height : 240px;
+            width : 240px;
+        }
+        span{
+            font-size : 3rem;
+        }
+    }
+
+    .todayContent {
+        .todayPost1div{
+            .todayPost1{
+                div{
+                    :nth-child(1) {
+                        font-size: 2.7rem;
+                    }
+                    :nth-child(2) {
+                        font-size: 1.8rem;
+                    }
+                    :nth-child(3) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        .todayPost2div{
+            .todayPost2{
+                div{
+                    :nth-child(1) {
+                        font-size: 2.7rem;
+                    }
+                    :nth-child(2) {
+                        font-size: 1.8rem;
+                    }
+                    :nth-child(3) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .allPosts{
+        .discover {
+            p{
+                font-size : 15rem;
+            }
+        }
+        .allPosts {
+            div{
+                p{
+                    font-size: 1.5rem;
+                }
+                .title {
+                    font-size: 2.5rem;
+                }
+                .tags {
+                    font-size: 1.9rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-height : 1600px) {
+    .Navbar{
+        height : 10vh;
+    }
+
+    .todayCircle{
+        div {
+            height : 300px;
+            width : 300px;
+        }
+        span{
+            font-size: 3rem;
+        }
+    }
+
+    .todayContent {
+        flex-direction: column;
+        .todayPost1div{
+            width: 80%;
+
+            .todayPost1{
+                div{
+                    :nth-child(1) {
+                        font-size: 2.7rem;
+                        padding : 5% 0;
+                    }
+                    :nth-child(2) {
+                        font-size: 1.8rem;
+                        padding : 3% 0;
+                    }
+                    :nth-child(3) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        .todayPost2div{
+            width : 70%;
+            margin-top: 10%;
+            .todayPost2{
+                div{
+                    :nth-child(1) {
+                        font-size: 2.7rem;
+                        padding : 5% 0;
+                    }
+                    :nth-child(2) {
+                        font-size: 1.8rem;
+                        padding : 5% 0;
+                    }
+                    :nth-child(3) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

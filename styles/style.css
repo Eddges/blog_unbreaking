@@ -1,0 +1,517 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Navbar {
+  height: 18vh;
+  background-color: #FE3048;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Redressed';
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+}
+
+.Navbar p {
+  color: black;
+  font-size: 2.6rem;
+}
+
+.Navbar div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Navbar div svg {
+  margin: 1%;
+}
+
+.unbroken {
+  height: 50vh;
+  background-color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.unbroken p {
+  font-family: 'Rajdhani';
+  color: black;
+  font-size: 4rem;
+  letter-spacing: 2.5rem;
+}
+
+.todayCircle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todayCircle svg {
+  position: absolute;
+}
+
+.todayCircle div {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  background-color: #FE3048;
+  position: absolute;
+  z-index: 1;
+}
+
+.todayCircle span {
+  z-index: 10;
+  color: white;
+  font-family: 'Righteous';
+  font-size: 2rem;
+}
+
+.todayContent {
+  height: auto;
+  padding: 20% 0;
+  background-color: #F1F1F1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: 'Righteous';
+}
+
+.todayContent .todayPost1div {
+  width: 55%;
+  background-color: #F1F1F1;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todayContent .todayPost1div .todayPost1 {
+  width: 90%;
+  height: 60%;
+  background-color: white;
+  padding: 2%;
+  -webkit-box-shadow: 0px 0px 8px #bdbdbd;
+          box-shadow: 0px 0px 8px #bdbdbd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todayContent .todayPost1div .todayPost1 img {
+  height: 100%;
+  max-width: 35%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.todayContent .todayPost1div .todayPost1 div {
+  padding: 20px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.todayContent .todayPost1div .todayPost1 div :nth-child(1) {
+  color: #FC5D3D;
+  font-size: 1.6rem;
+}
+
+.todayContent .todayPost1div .todayPost1 div :nth-child(2) {
+  color: #858585;
+}
+
+.todayContent .todayPost2div {
+  width: 45%;
+  background-color: #F1F1F1;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todayContent .todayPost2div .todayPost2 {
+  width: 70%;
+  background-color: white;
+  height: 80%;
+  -webkit-box-shadow: 0px 0px 8px #bdbdbd;
+          box-shadow: 0px 0px 8px #bdbdbd;
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.todayContent .todayPost2div .todayPost2 img {
+  width: 100%;
+  max-height: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.todayContent .todayPost2div .todayPost2 div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5% 0;
+}
+
+.todayContent .todayPost2div .todayPost2 div :nth-child(1) {
+  color: #FC5D3D;
+  font-size: 1.6rem;
+}
+
+.todayContent .todayPost2div .todayPost2 div :nth-child(2) {
+  color: #858585;
+}
+
+.allPosts {
+  background-color: #FE3048;
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Righteous';
+}
+
+.allPosts .discover {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.allPosts .discover svg {
+  display: inline;
+}
+
+.allPosts .discover p {
+  display: inline;
+  font-family: 'Quicksand';
+  font-size: 10rem;
+  color: white;
+}
+
+.allPosts .allPosts {
+  height: 80%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 2%;
+}
+
+.allPosts .allPosts div {
+  -webkit-box-shadow: 0px 0px 6px #2c2c2c;
+          box-shadow: 0px 0px 6px #2c2c2c;
+  height: auto;
+  width: 30%;
+  margin: 2% 5%;
+  background-color: white;
+  padding: 1.4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.allPosts .allPosts div img {
+  width: 100%;
+  max-height: 35%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.allPosts .allPosts div p {
+  padding: 1%;
+}
+
+.allPosts .allPosts div .title {
+  color: #FC5D3D;
+  font-size: 1.6rem;
+  padding: 4% 0;
+}
+
+.allPosts .allPosts div .tags {
+  color: #858585;
+  padding: 2%;
+}
+
+@media (max-width: 800px) {
+  .unbroken p {
+    letter-spacing: 1.2rem;
+  }
+  .todayContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 120vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+  }
+  .todayContent .todayPost1div {
+    height: 45%;
+    width: 90%;
+  }
+  .todayContent .todayPost1div .todayPost1 {
+    height: 80%;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .todayContent .todayPost2div {
+    height: 55%;
+    width: 90%;
+  }
+  .todayContent .todayPost2div .todayPost2 {
+    height: 95%;
+  }
+  .allPosts .allPosts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .allPosts .allPosts div {
+    width: 70%;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer p {
+  font-family: 'Redressed';
+  font-size: 2rem;
+}
+
+@media (max-width: 480px) {
+  .unbroken p {
+    letter-spacing: 0px;
+  }
+}
+
+@media (max-height: 1200px) {
+  .todayCircle svg {
+    display: none;
+  }
+}
+
+@media (min-width: 1800px) {
+  .unbroken p {
+    font-size: 6.4rem;
+  }
+  .Navbar p {
+    font-size: 4rem;
+  }
+  .todayCircle div {
+    height: 240px;
+    width: 240px;
+  }
+  .todayCircle span {
+    font-size: 3rem;
+  }
+  .todayContent .todayPost1div .todayPost1 div :nth-child(1) {
+    font-size: 2.7rem;
+  }
+  .todayContent .todayPost1div .todayPost1 div :nth-child(2) {
+    font-size: 1.8rem;
+  }
+  .todayContent .todayPost1div .todayPost1 div :nth-child(3) {
+    font-size: 1.5rem;
+  }
+  .todayContent .todayPost2div .todayPost2 div :nth-child(1) {
+    font-size: 2.7rem;
+  }
+  .todayContent .todayPost2div .todayPost2 div :nth-child(2) {
+    font-size: 1.8rem;
+  }
+  .todayContent .todayPost2div .todayPost2 div :nth-child(3) {
+    font-size: 1.5rem;
+  }
+  .allPosts .discover p {
+    font-size: 15rem;
+  }
+  .allPosts .allPosts div p {
+    font-size: 1.5rem;
+  }
+  .allPosts .allPosts div .title {
+    font-size: 2.5rem;
+  }
+  .allPosts .allPosts div .tags {
+    font-size: 1.9rem;
+  }
+}
+
+@media (min-height: 1600px) {
+  .Navbar {
+    height: 10vh;
+  }
+  .todayCircle div {
+    height: 300px;
+    width: 300px;
+  }
+  .todayCircle span {
+    font-size: 3rem;
+  }
+  .todayContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .todayContent .todayPost1div {
+    width: 80%;
+  }
+  .todayContent .todayPost1div .todayPost1 div :nth-child(1) {
+    font-size: 2.7rem;
+    padding: 5% 0;
+  }
+  .todayContent .todayPost1div .todayPost1 div :nth-child(2) {
+    font-size: 1.8rem;
+    padding: 3% 0;
+  }
+  .todayContent .todayPost1div .todayPost1 div :nth-child(3) {
+    font-size: 1.5rem;
+  }
+  .todayContent .todayPost2div {
+    width: 70%;
+    margin-top: 10%;
+  }
+  .todayContent .todayPost2div .todayPost2 div :nth-child(1) {
+    font-size: 2.7rem;
+    padding: 5% 0;
+  }
+  .todayContent .todayPost2div .todayPost2 div :nth-child(2) {
+    font-size: 1.8rem;
+    padding: 5% 0;
+  }
+  .todayContent .todayPost2div .todayPost2 div :nth-child(3) {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
